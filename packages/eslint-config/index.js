@@ -4,4 +4,7 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
+  settings: {
+    'import/ignore': ['node_modules/react-native/index\\.js$'],
+  },
 };
