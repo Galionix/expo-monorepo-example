@@ -1,3 +1,11 @@
+
+Q: Error: EPERM: operation not permitted, lstat '...\.git\objects\maintenance.lock'
+A: I had the same problem.
+
+- As @Mauricio De La Quintana said, the problem is permission.
+- In my case (Windows environment), I solved the problem by removing the read-only property from the Repos folder and adding write permission to the Everyone user.
+
+
 <div align="center">
   <h1>Expo monorepo</h1>
   <p>Fast pnpm monorepo for cross-platform apps built with Expo and React</p>
